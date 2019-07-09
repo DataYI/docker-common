@@ -6,9 +6,7 @@ sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories;
 
 # 安装必要的工具
 apk update;
-apk add build-bas;
-apk add linux-headers;
-apk add openssh;
+apk add build-base linux-headers libffi-dev openssh;
 
 # 添加pip国内镜像源
 mkdir ~/.pip;
